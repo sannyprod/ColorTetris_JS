@@ -1,0 +1,52 @@
+canvas {
+  background: transparent;
+}
+
+#game {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+}
+
+#background {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#ui {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+#music {
+  position: fixed;
+  top: 700px;
+  left: 672px;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 0;
+  font-size: 1.3em;
+  z-index: 4;
+}
+
+#music:hover {
+  cursor: pointer;
+}
+
+#music.off {
+  background: url(resources/sound_off.png);
+  background-size: contain;
+}
+
+#music.on {
+  background: url(resources/sound_on.png);
+  background-size: contain;
+  left: 674px;
+}
